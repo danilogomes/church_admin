@@ -5,7 +5,6 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:cpf) %></th>
       <th><%= model_class.human_attribute_name(:phone) %></th>
@@ -14,9 +13,9 @@
       <th><%= model_class.human_attribute_name(:neighborhood) %></th>
       <th><%= model_class.human_attribute_name(:city) %></th>
       <th><%= model_class.human_attribute_name(:uf) %></th>
-      <th><%= model_class.human_attribute_name(:date_) %></th>
-      <th><%= model_class.human_attribute_name(:birth) %></th>
+      <th><%= model_class.human_attribute_name(:birth_date) %></th>
       <th><%= model_class.human_attribute_name(:date_conversion) %></th>
+      <th><%= model_class.human_attribute_name(:baptism_date) %></th>
       <th><%= model_class.human_attribute_name(:active) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>

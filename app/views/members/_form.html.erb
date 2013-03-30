@@ -1,15 +1,15 @@
 <%= simple_form_for @member, :html => { :class => 'form-horizontal' } do |f| %>
   <%= f.input :name %>
-  <%= f.input :cpf %>
-  <%= f.input :phone %>
+  <%= f.input :cpf, :class => "cpf_input" %>
+  <%= f.input :phone, :class => "phone_input"  %>
   <%= f.input :street %>
   <%= f.input :number %>
   <%= f.input :neighborhood %>
   <%= f.input :city %>
   <%= f.input :uf %>
-  <%= f.input :date_ %>
-  <%= f.input :birth %>
-  <%= f.input :date_conversion %>
+  <%= f.input :birth_date, :class => "date_input" %>
+  <%= f.input :baptism_date, :class => "date_input" %>
+  <%= f.input :date_conversion, :class => "date_input" %>
   <%= f.input :active %>
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>

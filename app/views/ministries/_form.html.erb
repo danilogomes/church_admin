@@ -1,0 +1,11 @@
+<%= simple_form_for @ministry, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :ministry_name %>
+  <%= f.input :leader_name %>
+  <%= f.input :phone %>
+  <%= f.input :descripion_ministry %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                ministries_path, :class => 'btn' %>
+  </div>
+<% end %>

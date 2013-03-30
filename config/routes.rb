@@ -1,6 +1,5 @@
 ChurchAdmin::Application.routes.draw do
   
-
   devise_for :users
 
   root :to => 'dashboard#index'
@@ -8,6 +7,7 @@ ChurchAdmin::Application.routes.draw do
   authenticated :user do
     resources :members
     resources :dashboard
+    resources :ministries
     get 'logout' => 'devise/sessions#destroy'
   end
 
